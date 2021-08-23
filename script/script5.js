@@ -3,8 +3,9 @@ function commonElements(arr1, arr2) {
     for (let i = 0; i < arr1.length; i++) {
         for (let j = 0; j < arr2.length; j++) {
             if (arr1[i] === arr2[j]) {
-                if()
-                arr3.push(arr1[i]);
+                if (indexOf(arr3, arr1[i]) === -1) {
+                    arr3.push(arr1[i]);
+                }
             }
         }
     }
@@ -20,6 +21,6 @@ function indexOf(arr, el) {
     return -1;
 }
 
-console.log(indexOf([1, 7, 5], -7));
+// console.log(indexOf([1, 7, 5], -7));
 
-// commonElements([1, 2, 3], [2, 6, 2]);
+commonElements([1, 1, 1, 1, 2, 3], [2, 6, 3]);
