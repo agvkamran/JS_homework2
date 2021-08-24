@@ -1,17 +1,12 @@
 function firstRepeat(str) {
-    let repeat = true;
     for (let i = 0; i < str.length; i++) {
-        for (let k = i + 1; k < str.length; k++) {
+        for (let k = i - 1; k >= 0; k--) {
             if (str[i] === str[k]) {
-                repeat = false;
-                console.log(str[i]);
-
+                return str[i];
             }
         }
-        if (repeat) {
-            console.log('no repeat');
-        }
     }
+    return -1;
 }
 
-firstRepeat('legolaaas');
+console.log(firstRepeat('legolas'));

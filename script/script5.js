@@ -9,7 +9,7 @@ function commonElements(arr1, arr2) {
             }
         }
     }
-    console.log(arr3)
+    return arr3;
 }
 
 function indexOf(arr, el) {
@@ -21,6 +21,4 @@ function indexOf(arr, el) {
     return -1;
 }
 
-// console.log(indexOf([1, 7, 5], -7));
-
-commonElements([1, 1, 1, 1, 2, 3], [2, 6, 3]);
+console.log(commonElements([1, 1, 1, 1, 2, 3], [2, 4, 6, 3]));

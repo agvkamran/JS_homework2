@@ -9,7 +9,7 @@ function getArray(arr, str) {
                 }
             }
         }
-        console.log(arr);
+        return arr;
     }
     else if (str === 'Desc') {
         for (let i = 0; i < arr.length; i++) {
@@ -21,13 +21,13 @@ function getArray(arr, str) {
                 }
             }
         }
-        console.log(arr);
+        return arr;
     }
     else {
-        console.log(arr);
+        return arr;
     }
 }
 
-getArray([3, 1, 69, 51], 'Asc');
+console.log(getArray([3, 1, 69, 51], 'Desc'));
 
 

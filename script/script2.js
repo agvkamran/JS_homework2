@@ -121,8 +121,7 @@ function numToString(num) {
             num = num % 100;
         }
     }
-
-    console.log(s);
+    return s;
 }
 
-numToString(999);
+console.log(numToString(941));

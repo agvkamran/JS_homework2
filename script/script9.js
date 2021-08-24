@@ -1,9 +1,9 @@
-function arrayOfMultiples(num, str) {
+function arrayOfMultiples(num, length) {
     let arr = [];
-    for (let i = 1; i <= str; i++) {
+    for (let i = 1; i <= length; i++) {
         arr.push(num * i);
     }
-    console.log(arr);
+    return arr;
 }
 
-arrayOfMultiples(7, 5)
+console.log(arrayOfMultiples(7, 5));

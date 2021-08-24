@@ -1,4 +1,4 @@
-function f1(num) {
+function factory(num) {
     return function (arr) {
         let arr2 = [];
         for (let i = 0; i < arr.length; i++) {
@@ -8,8 +8,7 @@ function f1(num) {
     }
 }
 
-
-let closureMainFunc = f1(3);
+let closureMainFunc = factory(3);
 console.log(closureMainFunc([9, 18, 27]));
 
 

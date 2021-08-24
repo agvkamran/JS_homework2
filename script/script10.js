@@ -5,13 +5,13 @@ function f1(start, end) {
             arr.push(i);
         }
     }
-    else{
+    else {
         for (let i = start; i >= end; i--) {
             arr.push(i);
         }
     }
-    console.log(arr);
+    return arr;
 }
 
-f1(123,112);
+console.log(f1(12, 5));
 
